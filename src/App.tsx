@@ -6,7 +6,7 @@ import Layout from './layout';
 import Home from './HomePage';
 import Podcast from './Podcast';
 import Movies from './Movies';
-import MovieList from './Movies';
+import MovieList from './movie/movielist';
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="podcast" element={<Podcast />} />
-          <Route path="movies" element={<Movies />} />
+          <Route path="movies" element={<MovieList />} />
         </Route>
       </Routes>
     </BrowserRouter>
